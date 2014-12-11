@@ -93,3 +93,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 AVATAR_DEFAULT = 'img/avatar-placeholder.svg'
+
+# add svg support
+import mimetypes
+mimetypes.add_type("image/svg+xml", ".svg", True)
